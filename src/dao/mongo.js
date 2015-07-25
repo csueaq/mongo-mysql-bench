@@ -3,7 +3,7 @@ var config = require("config");
 var wrap = require('co-monk');
 var randomstring = require("randomstring");
 // mongo
-var db = monk(config.get("db.host")+":"+ config.get("db.port") + "/" + config.get("db.name"));
+var db = monk(config.get("mongo.host")+":"+ config.get("mongo.port") + "/" + config.get("mongo.name"));
 
 var testCollection = 'benchmark';
 var benchCol = db.get(testCollection);

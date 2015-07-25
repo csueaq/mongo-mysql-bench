@@ -1,8 +1,17 @@
 {
-  "db" : {
+  "mongo" : {
     "host" : "192.168.59.103",
     "port" : "27017",
     "name" : "local"
+  },
+
+
+  "mysql" : {
+    "host" : "192.168.59.103",
+    "port" : "3306",
+    "dbName" : "bench",
+    "username" : "root",
+    "password" : "123"
   },
 
   "cache" : {
