@@ -12,11 +12,5 @@
     "dbName" : "bench",
     "username" : "root",
     "password" : "123"
-  },
-
-  "cache" : {
-    "host" : "127.0.0.1",
-    "port" : "6379",
-    "enabled" : false
   }
 }

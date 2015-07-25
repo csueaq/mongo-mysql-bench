@@ -1,10 +1,10 @@
 frontend :
-  image : koa-react
+  image : bench
   volumes :
-    - ~/work/github/koa-react-seed:/usr/local/app
+    - ~/work/github/mongo-mysql-bench:/usr/local/app
   links :
     - mongo
-    - redis
+    - mysql
   ports:
     - "3000:3000"
 mongo :
@@ -12,7 +12,9 @@ mongo :
   ports:
     - "27017:27017"
   command: --smallfiles
-redis :
-  image : redis
+mysql :
+  image : mysql
+  environment:
+      MYSQL_ROOT_PASSWORD: "123"
   ports:
-    - "6379:6379"
+    - "3306:3306"
