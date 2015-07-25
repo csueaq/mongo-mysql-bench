@@ -5,7 +5,6 @@
 
 var Router = require('koa-router');
 var React = require('react');
-var index = React.createFactory(require('../views/index'));
 var indexRouter = new Router();
 var mongoDao = require('../dao/mongo');
 var mysqlDao = require('../dao/mysql');

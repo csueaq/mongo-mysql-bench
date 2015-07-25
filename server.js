@@ -7,8 +7,6 @@ var indexRouter = require('./src/routers/index');
 
 
 
-app.use(serve('public'));
-
 // logger
 var logging = function *(next){
     var start = new Date;
